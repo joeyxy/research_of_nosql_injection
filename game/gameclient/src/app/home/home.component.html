@@ -1,0 +1,16 @@
+﻿<div class="col-md-12">
+    <ul class="nav nav-pills">
+        <li role="presentation"  class="active"><a [routerLink]="['/']">用户管理</a></li>
+        <li role="presentation"><a [routerLink]="['/manager']">服务器管理</a></li>
+        <li role="presentation" ><a style="color:brown" [routerLink]="['/login']">登出</a></li>
+    </ul>
+    <h1>欢迎 {{currentUser.username}}!</h1>
+    <p>你已经登录了puokr账号管理系统</p>
+    
+    <h3>所有注册用户:</h3>
+    <ul>
+        <li *ngFor="let user of users">
+            {{user.username}}- <a *ngIf="user.username!='admin'" (click)="deleteUser(user._id)">Delete</a>
+        </li>
+    </ul>
+</div>

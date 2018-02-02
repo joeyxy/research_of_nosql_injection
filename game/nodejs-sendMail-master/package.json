@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-mail",
+  "version": "1.0.0",
+  "description": "nodejs-sendmail-test",
+  "main": "index.js",
+  "dependencies": {
+    "nodemailer": "^2.3.2",
+    "nodemailer-smtp-transport": "^2.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "nodejs-sendmail-test"
+  },
+  "author": "wangaq",
+  "license": "ISC"
+}

@@ -1,0 +1,28 @@
+<div class="col-md-12">
+    <ul class="nav nav-pills">
+        <li role="presentation"><a [routerLink]="['/']">用户管理</a></li>
+        <li class="active" role="presentation"><a [routerLink]="['/manager']">服务器管理</a></li>
+        <li role="presentation"><a style="color:brown" [routerLink]="['/login']">登出</a></li>
+    </ul>
+  <h3>查看你的服务器</h3>
+  <p>你负责的测试服务器都会在这里展示，生产服务器请联系管理员获取。</p>
+
+<table class="table">
+    <tbody>
+        <tr>
+            <th>ip</th>
+            <th>ssh用户名</th>
+            <th>ssh密码</th>
+            <th>系统</th>
+            <th>所有者</th>
+        </tr>
+        <tr *ngFor="let server of servers">
+            <td>{{server.ip}}</td>
+            <td>{{server.sshUserName}}</td>
+            <td>{{server.sshPassword}}</td>
+            <td>{{server.OS}}</td>
+            <td>{{server.owners}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>

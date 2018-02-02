@@ -1,0 +1,14 @@
+*.exe
+*.exe~
+*.orig
+*.test
+.*.swp
+.DS_Store
+.idea/
+nbproject/
+/nbproject/private/
+.vscode/
+data/
+etc/
+web/app%
+package-lock.json
